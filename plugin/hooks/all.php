@@ -2,7 +2,7 @@
 
 function HookSlackAllAfterlogin {
 	$data = array(
-	    'text'      => $username,
+	    'text'      => $username + " logged in successfully",
 	);   
 
 	$content = json_encode($data);
