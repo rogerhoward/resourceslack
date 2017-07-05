@@ -1,6 +1,9 @@
 <?php
 
-function HookSlackAllAfterlogin {
+function HookSlackAllAfterlogin() {
+
+	global $username, $channel_url;
+
 	$data = array(
 	    'text'      => $username + " logged in successfully",
 	);   

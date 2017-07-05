@@ -1,5 +1,5 @@
 sudo apt-get -y update
-
+sudo apt-get -y install avahi-utils
 echo "installing mysql..." 
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password rootpass1234'
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password rootpass1234'
